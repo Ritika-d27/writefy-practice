@@ -1,0 +1,89 @@
+.why-students-choose-us {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.title-choose {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.purple-box {
+    background-color: #6D3485;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+}
+
+.purple-box img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.text-box span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-box {
+    background-color: #f5f0fa;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 520px;
+    height: 320px;
+}
+
+.image-box img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post-job-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-job-btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}

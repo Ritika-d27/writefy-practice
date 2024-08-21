@@ -1,0 +1,31 @@
+/* Base styles for the button */
+.custom-button {
+    /* Primary color (adjust as needed) */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 4.0px 8.0px 8.0px hsl(3deg 2% 2% / 0.38);
+}
+
+.custom-button-1 {
+    background-color: #EEA828;
+        box-shadow: 4.0px 8.0px 8.0px hsl(3deg 2% 2% / 0.38);
+}
+
+/* Focus effect */
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+    /* Focus ring (adjust color) */
+}
+
+/* Disabled state */
+.custom-button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}

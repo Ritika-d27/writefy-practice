@@ -1,18 +1,125 @@
+/* Base styles for the navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
 }
 
+/* Logo styles */
 .navbar-logo {
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-desktop {
+    display: block;
+    font-size: 10px;
     font-weight: bold;
 }
 
+.logo-mobile {
+    display: none;
+}
+
+/* Links container styles */
 .navbar-links {
     display: flex;
-    gap: 15px;
+    gap: 25px;
+    margin-top: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100px;
+    }
+
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-links button {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .logo-mobile {
+        width: 60px;
+    }
+
+    .navbar-links {
+        gap: 15px;
+    }
+
+    .navbar-links button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Base styles for the button */
+.custom-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button variations */
+.for-writer {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 4px 8px 8px hsl(3deg 2% 2% / 0.38);
+}
+
+.signin {
+    background-color: #EEA828;
+    color: #000000;
+    box-shadow: 4px 8px 8px hsl(3deg 2% 2% / 0.38);
+}
+
+/* Focus effect */
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+/* Disabled state */
+.custom-button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
 }
