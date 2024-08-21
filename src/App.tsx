@@ -6,7 +6,7 @@ import Categories from './components/Categories';
 import Choosy from './components/Choosy';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-
+import HowItWorks from './components/HowItWorks'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Categories />
       <Choosy />
       <FAQ/>
+      <HowItWorks/>
       <Footer />
     </div>
   );

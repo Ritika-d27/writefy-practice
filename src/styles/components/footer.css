@@ -1,5 +1,112 @@
-.footer {
+/* .footer {
+    background-color: black;
+    color: bisque;
+}
+
+.footer1{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+.text_for_writers{
+    text-decoration: underline;
+    font-size: 30px;
+} */
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Creates a 4-column grid */
+    gap: 20px; /* Adds space between grid items */
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+}
+
+.footer1, .footer2, .footer3, .footer4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2px;
+}
+
+.footer1, .footer2, .footer3, .footer4 {
+    grid-column: span 2;
+}
+
+.footerlogo  {
+    width: 50%;
+    height: auto;
+    margin: 0 !important;
+}
+
+.text_for_writers {
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 10px; /* Adds space below the title */
+}
+
+/* Ensure logos are spaced and aligned properly */
+.footer1 img {
+    margin: 10px 0;
+}
+
+/* .footerlogo  {
+    width: 50%;
+    height: 50%;
+} */
+
+.footersmallogos{
+    width: 10%;
+    height: 10%;
+}
+
+.footericon{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 10px;
+    width: 10%;
+    height: 10%;
+}
+
+.footertext{
+    text-align: start;
+}
+
+.numfooter{
+    color: #eea828;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        grid-column: span 1;
+    }
+
+    .footerlogo {
+        width: 30%;
+    }
+
+    .text_for_writers {
+        font-size: 15px;
+    }
+
+    .footersmallogos {
+        width: 15%;
+        height: 15%;
+    }
+
+    .footericon {
+        width: 10%;
+        height: 10%;
+    }
 }
