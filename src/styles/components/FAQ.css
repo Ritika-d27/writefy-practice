@@ -1,6 +1,7 @@
 .faq-section {
-    padding-bottom: 2.5rem;
-    padding-left: 2px;
+    /* padding-bottom: 2.5rem;
+    padding-left: 2px; */
+    padding: 20px;
 }
 
 .container-faq {
@@ -8,20 +9,27 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 20%;
+    align-items: flex-start;
+    /* Align items to the start */
+    gap: 5%;
+    /* Adjust the gap between title and questions */
 }
 
 .faq-title {
     font-family: 'Baskerville', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* Adjust font size */
     font-weight: bold;
-    text-align: center;
     margin-bottom: 2rem;
+    width: 25%;
+    /* Take up 25% of the width */
+    text-align: left;
+    /* Align title to left */
 }
 
 .questions {
-    width: 100%;
+    width: 75%;
+    /* Take up 75% of the width */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -29,6 +37,34 @@
 
 .question {
     width: 100%;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .container-faq {
+        flex-direction: column;
+        /* Stack title and questions vertically */
+        align-items: flex-start;
+        /* Align items to start */
+        gap: 0;
+        /* Remove gap */
+    }
+
+    .faq-title {
+        width: 100%;
+        /* Full width on mobile */
+        text-align: center;
+        /* Center the title */
+        margin-bottom: 1rem;
+        /* Adjust margin for better spacing */
+        font-size: 2rem;
+        /* Reduce font size */
+    }
+
+    .questions {
+        width: 100%;
+        /* Full width on mobile */
+    }
 }
 
 .question-collapse {
@@ -41,7 +77,7 @@
 .question-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
 }
 

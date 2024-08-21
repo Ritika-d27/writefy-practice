@@ -9,8 +9,8 @@ const Choosy = (props: Props) => {
   return (
       <section className="why-students-choose-us">
     <h2 className="title-choose">Why Students Choose Us</h2>
-      <div className="container">
-        <div className="content">
+      <div className="containerml">
+        <div className="contentml">
          <div className="purple-box">
             <img src={wrlogo} alt="Benefits illustration" className="benefits-image" />
             <div className="text-box">

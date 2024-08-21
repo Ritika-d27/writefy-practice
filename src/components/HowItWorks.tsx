@@ -48,7 +48,7 @@ const HowItWorks : React.FC = () => {
     const activeContent = steps.find(step => step.id === activeStep);
 
     return (
-        <div>
+        <div className='hwiw'>
         <span className='header'>How it Works</span>
 
         <div className="how-it-works-container">

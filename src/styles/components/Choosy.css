@@ -1,5 +1,5 @@
 .why-students-choose-us {
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #ffffff;
 }
 
@@ -11,19 +11,55 @@
     color: #333333;
 }
 
-.container {
+.containerml {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* To ensure wrapping in mobile view */
 }
 
-.content {
+.contentml {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
+    flex-direction: row;
+    /* Default to row for desktop */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .contentml {
+        flex-direction: column;
+        /* Change to column on mobile */
+        align-items: center;
+        /* Center align the content */
+        gap: 0px;
+        /* Adjust spacing between elements */
+    }
+
+    .purple-box {
+        width: 20%;
+    }
+
+    .purple-box,
+    .image-box {
+        /* width: 100%; */
+        /* Full width on mobile */
+        max-width: 100%;
+        /* Ensure it doesn't exceed screen width */
+        height: auto;
+        /* Adjust height to fit content */
+    }
+
+    .image-box img {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
 }
 
 .purple-box {
@@ -35,7 +71,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 300px;
     height: 320px;
 }
 
@@ -53,18 +89,18 @@
 .image-box {
     background-color: #f5f0fa;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 520px;
+    width: 400px;
     height: 320px;
 }
 
 .image-box img {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
 }

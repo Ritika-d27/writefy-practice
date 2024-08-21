@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <Hero />
       <Categories />
+      <HowItWorks/>
       <Choosy />
       <FAQ/>
-      <HowItWorks/>
       <Footer />
     </div>
   );
