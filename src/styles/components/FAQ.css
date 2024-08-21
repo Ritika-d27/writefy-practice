@@ -1,5 +1,6 @@
 .faq-section {
     padding-bottom: 2.5rem;
+    padding-left: 2px;
 }
 
 .container-faq {
@@ -41,6 +42,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .collapse-icon {
